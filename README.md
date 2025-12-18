@@ -1,0 +1,1 @@
+# 2kie.politika
