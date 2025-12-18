@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Kufam:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --montserrat: "Montserrat", sans-serif;
+    --krona: "Krona One", sans-serif;
+    --kufam: "Kufam", sans-serif;
+}
+
+body {
+    margin: 0;
+  padding: 0;
+    background-color: #D4D5DE;
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.left-scrollable {
+  width: 73%; 
+  height: 100%;
+  padding-left: 0.813vw;
+  padding-top: 0.875vw;
+  padding-bottom: 1.438vw;
+  padding-right: 0px;
+  box-sizing: border-box;;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+  background-color: #F6F6F8;
+  border-radius: 0.625vw;
+}
+
+.twokie-block {
+  padding: 0vw 1.5vw;
+  overflow: hidden;
+}
+
+.twokie-block .twokie-zag-1 {
+  width: 77%;
+  font-family: var(--montserrat);
+  font-size: 4vw;
+  color: #2D2D2D;
+  font-weight: 500;
+  letter-spacing: -4%;
+  line-height: 99%;
+  margin-top: 0;
+  margin-bottom: 0vw;
+}
+
+.twokie-block .twokie-zag-2 {
+  width: 77%;
+  font-family: var(--montserrat);
+  font-size: 4vw;
+  color: #2D2D2D;
+  font-weight: 500;
+  letter-spacing: -4%;
+  line-height: 99%;
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+
+.twokie-block .twokie-opis-1 {
+  width: 48vw;
+  font-family: var(--montserrat);
+  font-size: 1.25vw;
+  line-height: 113.9%;
+  letter-spacing: -4%;
+  font-weight: 500;
+  padding-left: 0px;
+  color: #2D2D2D;
+  margin-bottom: 0vw;
+}
+
+.twokie-block .twokie-opis-2 {
+  width: 48vw;
+  font-family: var(--montserrat);
+  font-size: 1.25vw;
+  line-height: 113.9%;
+  letter-spacing: -4%;
+  font-weight: 500;
+  padding-left: 0px;
+  color: #2D2D2D;
+  margin-bottom: 3.813vw;
+  margin-top: 0vw;
+}
+
+.hero-content .twokie-block .twokie-opis-1,
+.hero-content .twokie-block .twokie-opis-2 {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hero-content .twokie-block .twokie-opis-1.is-visible,
+.hero-content .twokie-block .twokie-opis-2.is-visible {
+  opacity: 1;
+}
+
+
+
+.page-wrapper {
+  display: flex;
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.left-scrollable {
+  width: 73%; 
+  height: 100%;
+  padding-left: 0.813vw;
+  padding-top: 0.875vw;
+  padding-bottom: 1.438vw;
+  padding-right: 0px;
+  box-sizing: border-box;;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ограничиваем ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер */
+  background-color: #F6F6F8;
+  border-radius: 0.625vw;
+}
+
+.twokie-block {
+  padding: 0vw 1.5vw;
+  overflow: hidden;
+}
+
+.top-nav {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.top-nav button {
+  background-color: #2D2D2D;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 23.5px;
+  cursor: pointer;
+}
+
+.twokie-block .twokie-zag-1 {
+  width: 77%;
+  font-family: var(--montserrat);
+  font-size: 4vw;
+  color: #2D2D2D;
+  font-weight: 500;
+  letter-spacing: -4%;
+  line-height: 99%;
+  margin-top: 0;
+  margin-bottom: 3.5vw;
+}
+
+.knopki {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5vw;
+  padding-right: 0.688vw;
+}
+
+.merge-btn-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end; 
+  border-radius: 3vw;
+  overflow: hidden;
+}
+
+.icon-part-tw {
+  width: 0.625vw;
+  height: 0.625vw;
+}
+
+.icon-part,
+.text-part {
+  align-items:center;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-part {
+  width: 0.563vw;
+  display: flex;
+  background: #2D2D2D;
+  border-radius: 50%;
+  padding: 0.2vw 0.5vw;
+  margin-right: 0.2vw;
+}
+
+.icon-part .arrow-tw {
+  position: absolute;
+  width: 0.625vw;
+  height: 0.625vw;
+
+  transition:
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease;
+}
+
+.icon-part .arrow-1tw {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.icon-part .arrow-2tw {
+  transform: translate(-120%, 120%);
+  opacity: 0;
+}
+
+.merge-btn-container:hover .icon-part .arrow-1tw {
+  transform: translate(120%, -120%);
+  opacity: 0;
+}
+
+.merge-btn-container:hover .icon-part .arrow-2tw {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.text-part {
+  width: 4.313vw;
+    height: 1.563vw;
+  text-decoration: none;
+  margin: 0;
+  align-items: center;
+  font-family: var(--krona);
+  font-size: 0.875vw;
+  color: #FFFFFF;
+  line-height: 113.9%;
+  letter-spacing: 0%;
+  font-weight: 400;
+  background-color: #2D2D2D;
+  padding: 0.25vw 0.875vw;
+  border-radius: 2vw;
+  box-sizing: border-box;
+}
+
+/* Псевдоэлемент для анимации фона */
+.merge-btn-container::before {
+  margin: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0; /* Начинаем с правого края */
+  width: 11vw; /* Двойная ширина для плавного перехода */
+  height: 100%;
+  background: linear-gradient(
+    to left, /* Движение справа налево */
+    #2D2D2D 0%,    /* Цвет фона частей */
+    #2D2D2D 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  z-index: 0;
+  transition: transform 0.4s ease-out;
+  transform: translateX(50%); /* Изначально сдвинут вправо */
+}
+
+/* При наведении — фон движется влево, объединяя части */
+.merge-btn-container:hover::before {
+  transform: translateX(0); /* Возвращаемся в исходное положение */
+}
+
+.block-opis {
+    position: relative;
+    width: 100%;
+}
+
+.block-opis h2 {
+    font-family: var(--montserrat);
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-left: 2.813vw;
+    margin-top: 2.5vw;
+}
+
+.block-opis p {
+    font-family: var(--montserrat);
+    font-size: 1vw;
+    font-weight: 500;
+    padding-left: 2.813vw;
+    margin: 0;
+    line-height: 155%;
+}
+
+.block-opis ul {
+    padding-left: 4.2vw;
+    margin: 0;
+    list-style: disc;
+}
+
+.block-opis li {
+    font-family: var(--montserrat);
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 155%;
+    margin: 0;
+}
+
+
+
+.right-static {
+  position: fixed; 
+  right: 0;
+  top: 0;
+  width: 27%;
+  height: 100vh; 
+  background-color: #D4D5DE;
+  padding: 0px;
+  z-index: 1;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 1.25vw; 
+  padding-top: 0.813vw; 
+  padding-right: 1.188vw;
+}
+
+.vertical-links {
+  display: flex;
+  flex-direction: column; 
+}
+
+.nav-link {
+  font-size: 0.813vw;
+    font-family: var(--montserrat);
+    line-height: 99.9%;
+    letter-spacing: -5%;
+    font-style: italic;
+  font-weight: 600;
+  color: #82838A; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2D2D2D; 
+}
+
+.nav-link.active {
+  color: #2D2D2D; 
+}
+
+.telegram-link {
+    font-family: var(--montserrat);
+    font-size: 0.875vw;
+    line-height: 113%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.438vw 0.813vw; 
+  border: 1px solid #2D2D2D; 
+  border-radius: 1.468vw; 
+  background-color: #D4D5DE; 
+  color: #2D2D2D; 
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.telegram-link:hover {
+  background-color: #2D2D2D; 
+  color: #FFFFFF; 
+}
+
+.right-static .logo-block {
+  margin-left: 3vw;
+  margin-top: 1.813vw; 
+  margin-bottom: 99%; 
+}
+
+.right-static .logo-block img {
+  width: 20.6vw;
+  height: auto;
+}
+
+.price-mot-3 {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 1.125vw;
+  line-height: 114.2%;
+  letter-spacing: -4%;
+  display: flex; /* делаем flex-контейнер для выравнивания текста и стрелки */
+  align-items: center; /* центрируем элементы по вертикали */
+  justify-content: space-between; /* распределяем текст и стрелку по краям */
+  padding-left: 1.063vw;
+  background: transparent; /* фон прозрачный, как на скрине */
+  border: 1px solid #2D2D2D; /* обводка кнопки */
+  border-radius: 2vw; /* скругление углов */
+  text-decoration: none; /* убираем подчёркивание ссылки */
+  color: #2D2D2D; /* цвет текста */
+  width: 20.6vw; /* занимает всю доступную ширину */
+  box-sizing: border-box; /* включаем отступы в ширину элемента */
+  cursor: pointer; /* курсор "рука" при наведении */
+  margin-left: 3vw;
+}
+
+.icon-wrap-2 {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0.75vw;            
+  box-sizing:border-box;    
+  border:1px solid #2D2D2D;
+  border-radius:2vw;
+  margin-left: 10%;
+}
+
+.icon-wrap-2 .arrow-icon-2 {
+  width: 0.796vw;
+  height: 0.796vw;
+}
+
+.contact-block {
+  font-family: var(--krona);
+  text-align:left;
+  margin-top: 0.625vw;
+  margin-left: 3vw;
+}
+
+.fade-on-scroll {
+  transition: opacity 0.4s ease;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75vw;
+}
+
+.social-btn {
+  cursor: pointer;
+  margin-right: 0;
+  display: flex;
+}
+
+.wa-button {
+  width: 2.5vw;
+}
+
+.social-btn-1-2 {
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+}
+
+.tg-button {
+  width: 2.5vw;
+}
+
+.social-btn-1-3 {
+  line-height: 114.2%;
+  letter-spacing: -3%;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: var(--montserrat);
+  color: #FFFFFF;
+  padding: 0.75vw 3.8vw;
+  background: #2D2D2D;
+  border-radius: 1vw;
+  font-size: 0.875vw;
+  cursor: pointer;
+  margin: 0;
+  transition: 
+    color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.social-btn-1-3:hover {
+  background-color: #FFFFFF;
+  color: #2D2D2D;
+}
+
+
+.footer {
+  width: 100%;
+  height: 30.5vw;          
+  background-color: #C9CAD4;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Левая часть футера */
+.footer-left {
+  padding-left: 4.063vw;
+  padding-top: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vw;
+  margin-right: 0;
+}
+
+.start-project-btn {
+  font-size: 0.875vw;
+  font-weight: 600;
+  letter-spacing: -3%;
+  line-height: 113.9%;
+  font-family: var(--montserrat);
+  padding: 0.6vw 1.66vw;
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 14px;
+  width: 7vw;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.start-project-btn:hover {
+  background-color: #FFFFFF;
+  color: #2D2D2D;
+}
+
+.social-buttons-2 {
+  display: flex;
+  gap: 0.688vw;
+}
+
+.yt-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.375vw;
+}
+
+.yt-knopka {
+  width: 2.813vw;
+  height: 2vw;
+}
+
+.social-btn-2 {
+  font-weight: 600;
+  line-height: 114.2%;
+  text-decoration: none;
+  font-family: var(--montserrat);
+  color: #2D2D2D;
+  padding: 0.4vw 1.32vw 0.404vw 1.32vw;
+  background: #C9CAD4;
+  border: 1px solid #2D2D2D;
+  border-radius: 0.688vw;
+  font-size: 0.938vw;
+  cursor: pointer;
+  margin: 0;
+  transition: 
+    color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.social-btn-2:hover {
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+}
+
+.social-btn-3 {
+  line-height: 113.9%;
+  text-decoration: none;
+  font-family: var(--krona);
+  color: #2D2D2D;
+  padding: 0.52vw 1.38vw;
+  background: #C9CAD4;
+  border: 1px solid #2D2D2D;
+  border-radius: 23.5px;
+  font-size: 0.75vw;
+  cursor: pointer;
+  margin: 0;
+  transition: 
+    color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.social-btn-3:hover {
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+}
+
+/* Центральная часть футера */
+.footer-center {
+  padding-top: 2.875vw;
+  text-align: left;
+  width: 30%;
+  padding-left: 21.875vw;
+}
+
+.company-slogan {
+  color: #2D2D2D;
+  line-height: 113.9%;
+  font-weight: 500;
+  width: 17.625vw;
+  font-size: 0.875vw;
+  font-family: var(--montserrat);
+  margin: 0vw;
+  padding-bottom: 2.125vw;
+}
+
+.contact-email, .contact-phone {
+  line-height: 113.9%;
+  font-weight: 500;
+  font-size: 0.938vw;
+  font-family: var(--kufam);
+  margin: 0.125vw 0;
+  color: #2D2D2D;
+}
+
+.contact-phone {
+  text-decoration: underline;
+  padding-bottom: 2.063vw;
+}
+
+.telegram-label {
+  line-height: 113.9%;
+  font-weight: 500;
+    font-family: var(--montserrat);
+    font-size: 0.875vw;
+  margin: 0.313vw 0 0 0;
+  color: #727272;
+}
+
+.telegram-handle {
+  line-height: 113.9%;
+  font-weight: 500;
+    font-family: var(--kufam);
+    margin: 0.313vw 0 0 0;
+  font-size: 0.938vw;
+  color: #2D2D2D;
+}
+
+/* Правая часть футера */
+.footer-right {
+  padding-top: 1.813vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 5.684vw;
+  height: 2.563vw;
+  margin-bottom: 0.424vw;
+  padding-right: 3.688vw;
+}
+
+.copyright {
+  margin: 0 0 0 0;
+  font-size: 0.625vw;
+  font-family: var(--krona);
+  color: #2D2D2D;
+  margin-bottom: 1vw;
+  padding-right: 3.688vw;
+}
+
+.pdf-link {
+  display: flex;
+  align-items: center;
+  gap: 1.125vw;
+  margin-right: 0;
+  padding-right: 1.375vw;
+}
+
+.pdf-desc {
+  color: #2D2D2D;
+  line-height: 109%;
+  font-weight: 500;
+  font-family: var(--montserrat);
+  font-size: 0.75vw;
+  width: 8vw;
+  flex-wrap: wrap;
+}
+
+.pdf-icon {
+  color: #2D2D2D;
+  text-decoration: none;
+  font-family: var(--kufam);
+  font-size: 0.938vw;
+  background-color: #FFFFFF;
+  border-radius: 0.563vw;
+  padding: 0.716vw 1.393vw;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.pdf-icon:hover {
+  background-color:#2D2D2D;
+  color: #FFFFFF;
+}
+
+/* Нижний блок футера */
+.footer-bottom {
+  text-align: left;
+  margin-top: 3.25vw;
+  padding-left: 3.125vw;
+}
+
+.agency-name {
+  height: 7vw;
+  line-height: 113.9%;
+  font-family: var(--montserrat);
+  font-size: 6vw;
+  font-weight: normal;
+  color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  gap: 1.563vw; /* Отступ между частями текста */
+}
+
+.typing-animation {
+  display: inline-block;
+  font-family: var(--montserrat);
+  font-size: 6vw;
+  color: #2D2D2D;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0; /* Позволяет сжиматься до 0 */
+}
+
+.typing-animation::after {
+  content: '|';
+  animation: blink 0.8s step-end infinite;
+  margin-left: 5px;
+  opacity: 1;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.privacy-policy {
+  font-weight: 400;
+  line-height: 114.2%;
+  letter-spacing: 0%;
+  margin-top: 0.625vw;
+  font-size: 0.875vw;
+  font-family: var(--krona);
+  color: #8A8A8A;
+  text-decoration: none;
+  transition: 
+    text-decoration 10s ease,
+    transform 10s ease;
+}
+
+.privacy-policy:hover {
+  text-decoration: underline;
+}
